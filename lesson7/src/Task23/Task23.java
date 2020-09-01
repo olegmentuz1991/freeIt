@@ -6,7 +6,6 @@ public class Task23 {
         String text = "<p id=”p1”>";
         String result = text.replaceAll("<p.+>","<p></p>");
         System.out.println(result);
-
     }
 
 }
