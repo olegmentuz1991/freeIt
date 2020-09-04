@@ -1,4 +1,4 @@
-package robot.hands;
+package lesson7.maintask.robot.hands;
 
 public class SonyHand implements IHand {
     private int price;

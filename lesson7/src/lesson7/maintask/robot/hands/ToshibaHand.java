@@ -1,4 +1,4 @@
-package robot.hands;
+package lesson7.maintask.robot.hands;
 
 public class ToshibaHand implements IHand {
     private int price;

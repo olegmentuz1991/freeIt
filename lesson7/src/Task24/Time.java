@@ -16,19 +16,19 @@ public class Time {
         this.seconds = seconds;
     }
 
-    public Time calculateTime(){
-        if (seconds>59){
-            hours+=seconds/3600;
-            seconds= seconds%3600;
-            minutes+=seconds/60;
-            seconds=seconds%60;
+    public Time calculateTime() {
+        if (seconds > 59) {
+            hours += seconds / 3600;
+            seconds = seconds % 3600;
+            minutes += seconds / 60;
+            seconds = seconds % 60;
         }
-        if (minutes>59){
-            hours += minutes/60;
-            minutes = minutes%60;
+        if (minutes > 59) {
+            hours += minutes / 60;
+            minutes = minutes % 60;
         }
 
-    return (new Time(hours,minutes,seconds));
+        return (new Time(hours, minutes, seconds));
 
     }
 
@@ -42,18 +42,18 @@ public class Time {
     }
     //Типо compareTo
 
-    public int compareTime(Time time){
-        if (time.hours<this.hours){
+    public int compareTime(Time time) {
+        if (time.hours < this.hours) {
             return 1;
-        } else if (time.hours>this.minutes) {
+        } else if (time.hours > this.hours) {
             return -1;
-        } else if (time.minutes<this.minutes) {
+        } else if (time.minutes < this.minutes) {
             return 1;
-        } else if (time.minutes>this.minutes) {
+        } else if (time.minutes > this.minutes) {
             return -1;
-        } else if (time.seconds<this.seconds) {
+        } else if (time.seconds < this.seconds) {
             return 1;
-        } else if (time.seconds>this.seconds) {
+        } else if (time.seconds > this.seconds) {
             return -1;
         } else {
             return 0;

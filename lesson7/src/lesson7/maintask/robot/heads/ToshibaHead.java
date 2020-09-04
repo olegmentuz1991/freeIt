@@ -1,4 +1,4 @@
-package robot.heads;
+package lesson7.maintask.robot.heads;
 
 public class ToshibaHead implements IHead {
 

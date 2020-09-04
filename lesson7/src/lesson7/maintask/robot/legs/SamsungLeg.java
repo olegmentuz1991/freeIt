@@ -1,4 +1,4 @@
-package robot.legs;
+package lesson7.maintask.robot.legs;
 
 public class SamsungLeg implements ILeg {
     private int price;

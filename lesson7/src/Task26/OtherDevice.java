@@ -1,11 +1,10 @@
 package Task26;
 
 public class OtherDevice extends HouseholdAppliance {
-    public OtherDevice(String name, int warranty) {
-        super(name, warranty);
+    private String workingType;
+    public OtherDevice(String brand, int warranty,String workingType) {
+        super(brand, warranty);
+        this.workingType = workingType;
     }
 
-    private enum type{
-        BATTERY, GAS, MANUAL
-    }
 }

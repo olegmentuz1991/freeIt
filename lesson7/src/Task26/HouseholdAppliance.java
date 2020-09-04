@@ -1,11 +1,11 @@
 package Task26;
 
-public abstract class Appliance {
-    private String name;
+public abstract class HouseholdAppliance {
+    private String brand;
     private int warranty;
 
-    public Appliance(String name, int warranty) {
-        this.name = name;
+    public HouseholdAppliance(String brand, int warranty) {
+        this.brand = brand;
         this.warranty = warranty;
     }
 }
