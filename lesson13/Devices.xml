@@ -2,7 +2,7 @@
 <w:Devices
         xmlns:w="DeviceRule.xsd">
     <Device>
-        <id>1</id>
+        <id>MSMDASDASDJ</id>
         <Name>Keyboard</Name>
         <Origin>USA</Origin>
         <Type>
@@ -15,7 +15,7 @@
         <isCritical>false</isCritical>
     </Device>
     <Device>
-        <id>2</id>
+        <id>SLDFSODNSM</id>
         <Name>VideoCard</Name>
         <Origin>China</Origin>
         <Type>
