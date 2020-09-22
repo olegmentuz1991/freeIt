@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:Devices
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="DeviceRule.xsd"
+        xmlns:w="DevicesRule.xsd">
+    <Device>
+        <id>1</id>
+        <Name>Keyboard</Name>
+        <Origin>USA</Origin>
+        <Type>
+            <isPeriphery>true</isPeriphery>
+            <energyVT>6</energyVT>
+            <hasCooler>false</hasCooler>
+            <complection>InputOutput</complection>
+            <ports>USB</ports>
+        </Type>
+        <isCritical>false</isCritical>
+    </Device>
+    <Device>
+        <id>2</id>
+        <Name>VideoCard</Name>
+        <Origin>China</Origin>
+        <Type>
+            <isPeriphery>false</isPeriphery>
+            <energyVT>300</energyVT>
+            <hasCooler>true</hasCooler>
+            <complection>MULTIMEDIA</complection>
+            <ports>COM</ports>
+        </Type>
+        <isCritical>true</isCritical>
+    </Device>
+</w:Devices>

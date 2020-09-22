@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="DevicesRule.xsd" xmlns:w="DevicesRule.xsd">
+    <xsd:element name="Devices" type="w:Devices" />
+        <xsd:complexType name="Devices">
+                        <xsd:sequence>
+                            <xsd:element name='Device' type='Device' minOccurs='0' maxOccurs='unbounded' />
+                        </xsd:sequence>
+        </xsd:complexType>
+    <xsd:complexType name='Device'>
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:ID">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:ID">
+                    <xsd:pattern value="[a-zA-Z]{2}[a-zA-Z0-9]{5,10}"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name='Name' type='xsd:string'/>
+            <xsd:element name='Origin' type='xsd:string'/>
+            <xsd:element name='Price' type='xsd:nonNegativeInteger' minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name='Type' type='Type'/>
+            <xsd:element name="isCritical" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name='Type'>
+        <xsd:sequence>
+            <xsd:element name="isPeriphery" type="xsd:boolean"/>
+            <xsd:element name="energyVT" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="hasCooler" type="xsd:boolean"/>
+            <xsd:element name="complection" default="InputOutput">
+                <xsd:simpleType>
+                    <xsd:restriction>
+                    <xsd:enumeration value="InputOutput"/>
+                    <xsd:enumeration value="MULTIMEDIA"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="ports" default="COM">
+            <xsd:simpleType>
+                <xsd:restriction>
+                <xsd:enumeration value="COM"/>
+                <xsd:enumeration value="USB"/>
+                <xsd:enumeration value="LPT"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+        </xsd:sequence>
+
+    </xsd:complexType>
+
+</xsd:schema>
