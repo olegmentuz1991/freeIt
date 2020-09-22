@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <w:Devices
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="DeviceRule.xsd"
-        xmlns:w="DevicesRule.xsd">
+        xmlns:w="DeviceRule.xsd">
     <Device>
         <id>1</id>
         <Name>Keyboard</Name>

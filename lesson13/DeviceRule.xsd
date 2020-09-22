@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="DevicesRule.xsd" xmlns:w="DevicesRule.xsd">
+            targetNamespace="DeviceRule.xsd" xmlns:w="DeviceRule.xsd">
     <xsd:element name="Devices" type="w:Devices" />
         <xsd:complexType name="Devices">
                         <xsd:sequence>
